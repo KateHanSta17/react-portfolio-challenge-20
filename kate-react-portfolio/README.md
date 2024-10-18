@@ -1,5 +1,61 @@
 # 20 React: React Portfolio
 
+## Github URL
+[React Portfolio Challenge 20 Github](https://github.com/KateHanSta17/react-portfolio-challenge-20)
+
+## Deployed Project Link
+[Deployed React Portfolio Challenge](placeholder URL)
+
+## Description
+This project is a portfolio website built using React and Vite. It showcases a collection of my work as a web developer, including projects, a brief bio, and ways to contact me.
+
+## User Story
+AS AN employer looking for candidates with experience building single-page applications,  
+I WANT to view a potential employee's deployed React portfolio of work samples,  
+SO THAT I can assess whether they're a good candidate for an open position.
+
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Credits](#credits)
+
+## Technologies Used
+- React.js
+- Vite
+- React Router DOM
+
+## Installation
+To install the necessary dependencies, run the following command:
+```bash
+npm install
+```
+
+## Usage
+To start the development server, run:
+
+```
+npm run dev
+```
+Visit the app at ``` http://localhost:3000 ```.
+
+## License
+MIT License.
+
+## Screenshots
+<!-- Add screenshots of your portfolio here -->
+## Links
+- Deployed Application
+- [GitHub Repository](https://github.com/KateHanSta17/react-portfolio-challenge-20)
+
+## Credits
+This project was built as part of my web development bootcamp challenge.
+--------------
 ## Your Task
 
 Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
