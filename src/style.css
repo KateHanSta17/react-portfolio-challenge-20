@@ -1,106 +1,211 @@
-/* Import the fonts */
 /* General body styles */
 body {
     font-family: 'Darker Grotesque', sans-serif;
-    background-color: #f8f9fa; /* Light grey for the body */
+    background-color: #f8f9fa;
     color: #000000;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #ffffff; /* White background for the header */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
-  }
-  
-  .header-title {
+    width: 100%;
+    text-align: center;
+}
+
+.header-title {
     font-family: 'Lexend Zetta', sans-serif;
     font-size: 2.5rem;
     margin: 0;
-  }
-  
-  /* Portfolio Section Styles */
-  .album {
-    padding: 3rem 0;
-  }
-  
-  .card {
+}
+
+/* Portfolio Heading */
+.portfolio-title {
+    font-family: 'Lexend Zetta', sans-serif; /* Same font as "Kate Hannah" */
+    font-size: 2.5rem; /* Adjust size as needed */
+    text-align: center; /* Center the heading */
+    margin: 0 auto 1.5rem; /* Add spacing beneath the heading */
+    padding-top: 2rem; /* Optional: Add some top padding if needed */
+}
+
+/* Navigation Menu */
+header ul.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+header ul.nav li {
+    flex: 1;
+    margin: 0 10px;
+}
+
+header ul.nav li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* Style for About and Portfolio buttons */
+header ul.nav li:nth-child(1) a {
+    background-color: #ddb1fd;
+    border: 2px solid #6A0DAD;
+}
+
+header ul.nav li:nth-child(2) a {
+    background-color: #99eaea;
+    border: 2px solid #157676;
+}
+
+/* Style for Contact and Resume buttons */
+header ul.nav li:nth-child(3) a {
+    background-color: #99eaea;
+    border: 2px solid #157676;
+}
+
+header ul.nav li:nth-child(4) a {
+    background-color: #ddb1fd;
+    border: 2px solid #6A0DAD;
+}
+
+header ul.nav li a:hover {
+    color: white;
+    background-color: #6A0DAD;
+}
+
+/* Portfolio Section Styles */
+.album {
+    padding: 1.5rem 0; /* Reduced padding between heading and cards */
+}
+
+.card {
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-title {
+    margin: 10px 0;
+}
+
+.card-title {
     font-family: 'Lexend Zetta', sans-serif;
     font-size: 1.5rem;
-  }
-  
-  .card-body {
+}
+
+.card-body {
     font-family: 'Darker Grotesque', sans-serif;
     color: #000;
-  }
-  
-  .btn-group .btn {
+}
+
+/* Buttons inside the cards */
+.card .btn-group .btn {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1rem;
-  }
-  
-  /* GitHub Repo Buttons */
-  .btn-github {
-    background-color: #ddb1fd; /* Light purple */
-    color: black; /* Black text */
-    border-color: #6A0DAD; /* Keep the current border */
-  }
-  
-  .btn-github:hover {
-    background-color: #6A0DAD; /* Dark purple on hover */
-    color: white; /* White text on hover */
-  }
-  
-  /* Live/Demonstration Buttons */
-  .btn-live {
-    background-color: #99eaea; /* Light turquoise */
-    color: black; /* Black text */
-    border-color: #157676; /* Keep the current border */
-  }
-  
-  .btn-live:hover {
-    background-color: #157676; /* Dark turquoise on hover */
-    color: white; /* White text on hover */
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #ffffff; /* White background for the footer */
+}
+
+/* GitHub Repo Buttons */
+.btn-github {
+    background-color: #ddb1fd;
+    color: black;
+    border-color: #6A0DAD;
+}
+
+.btn-github:hover {
+    background-color: #6A0DAD;
+    color: white;
+}
+
+/* Live/Demonstration Buttons */
+.btn-live {
+    background-color: #99eaea;
+    color: black;
+    border-color: #157676;
+}
+
+.btn-live:hover {
+    background-color: #157676;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
     border-top: 1px solid #dee2e6;
-  }
-  
-  .footer-logo {
+    padding: 20px 0;
+}
+
+.footer-logo {
     height: 50px;
     margin-right: 10px;
-  }
-  
-  .text-muted {
+}
+
+.text-muted {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1rem;
-  }
-  
-  ul.nav li a {
-    color: #6A0DAD; /* Purple for social icons */
-  }
-  
-  ul.nav li a:hover {
-    color: #1ABC9C; /* Turquoise hover effect for social icons */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.col-md-4.d-flex {
+    flex-grow: 1;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
     .header-title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
+    .portfolio-title {
+        font-size: 2rem;
+    }
+
+    header ul.nav {
+        flex-wrap: wrap;
+    }
+
+    header ul.nav li {
+        flex: 0 0 48%;
+        margin: 10px 1%;
+    }
+
+    header ul.nav li a {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    /* Adjust footer for mobile */
+    footer .container {
+        flex-wrap: wrap; /* Allow wrapping on mobile */
+        text-align: center;
+    }
+
+    .col-md-4.d-flex {
+        white-space: normal; /* Allow wrapping */
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     .text-muted {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
+
+    ul.nav {
+        justify-content: center;
+    }
+
+    ul.nav li {
+        margin: 0 10px;
+    }
+}
