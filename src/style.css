@@ -207,3 +207,14 @@ footer .container {
         margin: 0 10px;
     }
 }
+/* LinkedIn Button Styling */
+.btn-linkedin {
+    background-color: #99eaea; /* Turquoise background */
+    color: black; /* Black text */
+    border-color: #157676; /* Dark turquoise border */
+}
+
+.btn-linkedin:hover {
+    background-color: #157676; /* Darker turquoise on hover */
+    color: white; /* White text on hover */
+}
