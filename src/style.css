@@ -1,4 +1,4 @@
-/* General body styles */
+/* 1. General body styles */
 body {
     font-family: 'Darker Grotesque', sans-serif;
     background-color: #f8f9fa;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Header Styles */
+/* 2. Header Styles */
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
@@ -21,16 +21,7 @@ header {
     margin: 0;
 }
 
-/* Portfolio Heading */
-.portfolio-title {
-    font-family: 'Lexend Zetta', sans-serif; /* Same font as "Kate Hannah" */
-    font-size: 2.5rem; /* Adjust size as needed */
-    text-align: center; /* Center the heading */
-    margin: 0 auto 1.5rem; /* Add spacing beneath the heading */
-    padding-top: 2rem; /* Optional: Add some top padding if needed */
-}
-
-/* Navigation Menu */
+/* 3. Navigation Menu */
 header ul.nav {
     display: flex;
     justify-content: space-around;
@@ -81,9 +72,18 @@ header ul.nav li a:hover {
     background-color: #6A0DAD;
 }
 
-/* Portfolio Section Styles */
+/* 4. Portfolio Heading */
+.portfolio-title {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    padding-top: 2rem;
+}
+
+/* 5. Portfolio Section Styles */
 .album {
-    padding: 1.5rem 0; /* Reduced padding between heading and cards */
+    padding: 1.5rem 0;
 }
 
 .card {
@@ -102,7 +102,7 @@ header ul.nav li a:hover {
     color: #000;
 }
 
-/* Buttons inside the cards */
+/* 6. Buttons inside the cards */
 .card .btn-group .btn {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1rem;
@@ -132,7 +132,7 @@ header ul.nav li a:hover {
     color: white;
 }
 
-/* Footer Styles */
+/* 7. Footer Styles */
 footer {
     background-color: #ffffff;
     border-top: 1px solid #dee2e6;
@@ -160,7 +160,7 @@ footer .container {
     flex-grow: 1;
 }
 
-/* Media Query for Mobile */
+/* 8. Media Query for Mobile */
 @media (max-width: 768px) {
     .header-title {
         font-size: 2rem;
@@ -186,12 +186,12 @@ footer .container {
 
     /* Adjust footer for mobile */
     footer .container {
-        flex-wrap: wrap; /* Allow wrapping on mobile */
+        flex-wrap: wrap;
         text-align: center;
     }
 
     .col-md-4.d-flex {
-        white-space: normal; /* Allow wrapping */
+        white-space: normal;
         justify-content: center;
         margin-bottom: 10px;
         text-align: center;
@@ -207,5 +207,21 @@ footer .container {
 
     ul.nav li {
         margin: 0 10px;
+    }
+}
+
+/* About Title (Default: Desktop View) */
+.about-title {
+    font-family: 'Lexend Zetta', sans-serif; /* Same font as "Kate Hannah" in the header */
+    font-size: 2.5rem; /* Adjust size as needed */
+    text-align: left; /* Left-aligned for desktop */
+    margin: 0 0 1.5rem; /* Margin below the heading */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .about-title {
+        text-align: center; /* Centered for mobile view */
+        font-size: 2rem; /* Slightly smaller for mobile if needed */
     }
 }
