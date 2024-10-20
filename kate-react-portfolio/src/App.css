@@ -1,23 +1,112 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Define the color palette */
+:root {
+  --purple: #6A0DAD;
+  --turquoise: #1ABC9C;
+  --yellow: #F4D03F;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 20px;
   text-align: center;
 }
 
+h1 {
+  font-family: 'Itim', cursive; /* Apply Itim font to h1 */
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Itim', cursive; /* For smaller section headings */
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  font-family: 'Itim', cursive; /* Apply Itim font to nav links */
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Section Styles */
+section {
+  padding: 40px;
+  margin: 20px 0;
+}
+
+section.about {
+  background-color: var(--turquoise);
+}
+
+section.portfolio {
+  background-color: var(--yellow);
+}
+
+footer {
+  background-color: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--yellow);
+  color: var(--black);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: var(--turquoise);
+}
+
+/* Logo Styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Logo Spin Animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +122,80 @@
   }
 }
 
+/* Card Styles */
 .card {
   padding: 2em;
+  background-color: var(--turquoise); /* You can use var(--yellow) for variety */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive Design: Media Queries */
+@media (max-width: 768px) {
+  /* Tablet screens */
+  body {
+    padding: 1rem;
+  }
+
+  header, footer {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile screens */
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
 }
