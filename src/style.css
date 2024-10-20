@@ -71,28 +71,33 @@ header ul.nav li a:hover {
     background-color: #6A0DAD;
 }
 
-/* About Title (Default: Desktop View) */
-.about-title {
-    font-family: 'Lexend Zetta', sans-serif;
+/* Mobile Image Display (show only the first image on mobile) */
+@media (max-width: 768px) {
+    .gallery-container .col-6:nth-child(n+2) {
+        display: none; /* Hide all but the first image */
+    }
+}
+
+/* Portfolio Title Styling */
+.portfolio-title {
+    font-family: 'Lexend Zetta', sans-serif; /* Same font as the header */
     font-size: 2.5rem;
-    text-align: left;
-    margin: 0 0 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-/* Gallery Image Styling */
-.gallery-image {
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 350px; /* Larger image size for desktop */
-    width: 350px;
-    object-fit: cover;
+.about-title {
+    font-family: 'Lexend Zetta', sans-serif; /* Same font as the header */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-/* Buttons */
+/* General Button Styles */
 .btn-github {
-    background-color: #ddb1fd;
+    background-color: #ddb1fd; /* Purple */
     color: black;
-    border-color: #6A0DAD;
+    border-color: #6A0DAD; /* Dark Purple */
 }
 
 .btn-github:hover {
@@ -101,9 +106,9 @@ header ul.nav li a:hover {
 }
 
 .btn-live {
-    background-color: #99eaea;
+    background-color: #99eaea; /* Turquoise */
     color: black;
-    border-color: #157676;
+    border-color: #157676; /* Dark Turquoise */
 }
 
 .btn-live:hover {
@@ -111,27 +116,38 @@ header ul.nav li a:hover {
     color: white;
 }
 
-/* Media Query for Mobile */
+/* LinkedIn Button Styling */
+.btn-linkedin {
+    background-color: #99eaea; /* Turquoise background */
+    color: black; /* Black text */
+    border-color: #157676; /* Dark turquoise border */
+}
+
+.btn-linkedin:hover {
+    background-color: #157676; /* Darker turquoise on hover */
+    color: white; /* White text on hover */
+}
+
+/* Center LinkedIn button on mobile, left-align on desktop */
 @media (max-width: 768px) {
-    .about-title {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .gallery-container {
-        margin-top: 20px;
-    }
-
-    /* Adjust image size for mobile */
-    .gallery-image {
-        height: 250px; /* Slightly larger for mobile */
-        width: 250px;
+    .btn-linkedin {
+        display: block;
         margin: 0 auto;
+        text-align: center;
     }
+}
 
-    /* Show only the favorite image */
-    .gallery-container .col-6:nth-child(n+2) {
-        display: none;
+/* Ensure space between image and buttons */
+.d-grid {
+    margin-top: 40px; /* Adds space between the buttons and content above */
+    margin-bottom: 40px; /* Adds space between the buttons and content below */
+}
+
+/* Mobile-specific rule if needed */
+@media (max-width: 768px) {
+    .d-grid {
+        margin-top: 40px; /* Ensure space remains on mobile */
+        margin-bottom: 40px; /* Ensure space remains on mobile */
     }
 }
 
@@ -159,11 +175,7 @@ footer .container {
     flex-wrap: nowrap;
 }
 
-.col-md-4.d-flex {
-    flex-grow: 1;
-}
-
-/* Media Query for Mobile */
+/* Responsive Footer for Mobile */
 @media (max-width: 768px) {
     .header-title {
         font-size: 2rem;
@@ -207,14 +219,16 @@ footer .container {
         margin: 0 10px;
     }
 }
-/* LinkedIn Button Styling */
-.btn-linkedin {
+
+/* Submit Button Styling (for Contact Page) */
+.btn-submit {
     background-color: #99eaea; /* Turquoise background */
     color: black; /* Black text */
     border-color: #157676; /* Dark turquoise border */
+    width: 100%; /* Full width */
 }
 
-.btn-linkedin:hover {
+.btn-submit:hover {
     background-color: #157676; /* Darker turquoise on hover */
     color: white; /* White text on hover */
 }
